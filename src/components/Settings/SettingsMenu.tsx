@@ -7,6 +7,7 @@ import ToggleSearchEngines from "./ToggleSearchEngines";
 import ManageWebsitesList from "./ManageWebsitesList";
 import VolumeSetting from "./VolumeSetting";
 import LayoutChange from "./LayoutChange";
+import { SearchEngines } from "../SearchBar";
 
 interface SettingsMenuProps {
   toggleSettings: () => void;
@@ -14,8 +15,8 @@ interface SettingsMenuProps {
   sites: Website[];
   currentBackground: string;
   setCurrentBackground: (bgX: string) => void;
-  searchEngines: string[];
-  setSearchEngines: (searchEngines: string[]) => void;
+  searchEngines: SearchEngines[];
+  setSearchEngines: (searchEngines: SearchEngines[]) => void;
 }
 
 export default function SettingsMenu({

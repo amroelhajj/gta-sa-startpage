@@ -1,6 +1,10 @@
 import Dexie, { EntityTable } from "dexie";
 
-const initWebsites = [{ name: "GITHUB", link: "https://www.github.com" }];
+const initWebsites = [
+  { name: "YouTube", link: "https://www.youtube.com/" },
+  { name: "Gmail", link: "https://mail.google.com/" },
+  { name: "HiAnime", link: "https://hianime.to/home" },
+];
 
 interface Website {
   id: number;

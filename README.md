@@ -2,7 +2,8 @@
 
 A browser start page that looks like the iconic GTA San Andreas menu
 
-![preview](./assets/preview.png)
+![preview](./assets/MainMenu.png)
+![preview](./assets/Settings.png)
 
 > [!Note]
 > The live site is hosted [here](https://wjkba.github.io/gta-sa-menu-startpage/)

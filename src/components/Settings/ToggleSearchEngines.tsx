@@ -210,9 +210,6 @@ export default function ToggleSearchEngines({
     <div className="grid gap-6">
       <div>
         <h2 className="text-white text-xl mb-2">Active Search Engines</h2>
-        <p className="text-gray-400 mb-2">
-          Use the arrows to change the order in which search engines appear.
-        </p>
         {searchEngines.length === 0 ? (
           <p className="text-gray-400">No search engines activated.</p>
         ) : (

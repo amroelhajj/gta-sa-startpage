@@ -49,12 +49,12 @@ export default function AddWebsiteForm({
         <input
           ref={nameRef}
           class={`mb-2 text-white outline-none bg-neutral-800 p-2 text-left md:text-2xl text-lg font-medium w-full`}
-          placeholder={"website name"}
+          placeholder={"Title"}
         />
         <input
           ref={linkRef}
           class={`mb-2 text-white outline-none bg-neutral-800 p-2 text-left md:text-2xl text-lg font-medium w-full`}
-          placeholder={"link"}
+          placeholder={"URL (e.g. https://youtube.com/)"}
         />
         {message && <p class={"text-yellow-300"}>{message}</p>}
       </div>

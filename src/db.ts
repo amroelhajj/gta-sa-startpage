@@ -43,3 +43,65 @@ export async function getDbArray() {
     console.error(error);
   }
 }
+
+// Move a website up in the list (swap with the previous website)
+export async function moveWebsiteUp(id: number) {
+  try {
+    // Get all websites
+    const websites = await db.websites.toArray();
+
+    // Find the index of the website to move
+    const index = websites.findIndex((site) => site.id === id);
+    if (index <= 0) return websites; // Already at the top or not found
+
+    // Swap with the previous website
+    const temp = websites[index];
+    websites[index] = websites[index - 1];
+    websites[index - 1] = temp;
+
+    // Clear the database and reinsert all websites in the new order
+    await db.websites.clear();
+    for (const site of websites) {
+      await db.websites.add({
+        name: site.name,
+        link: site.link,
+      });
+    }
+
+    return await getDbArray();
+  } catch (error) {
+    console.error("Failed to move website up:", error);
+    return null;
+  }
+}
+
+// Move a website down in the list (swap with the next website)
+export async function moveWebsiteDown(id: number) {
+  try {
+    // Get all websites
+    const websites = await db.websites.toArray();
+
+    // Find the index of the website to move
+    const index = websites.findIndex((site) => site.id === id);
+    if (index === -1 || index >= websites.length - 1) return websites; // At the bottom or not found
+
+    // Swap with the next website
+    const temp = websites[index];
+    websites[index] = websites[index + 1];
+    websites[index + 1] = temp;
+
+    // Clear the database and reinsert all websites in the new order
+    await db.websites.clear();
+    for (const site of websites) {
+      await db.websites.add({
+        name: site.name,
+        link: site.link,
+      });
+    }
+
+    return await getDbArray();
+  } catch (error) {
+    console.error("Failed to move website down:", error);
+    return null;
+  }
+}

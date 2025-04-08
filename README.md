@@ -1,25 +1,34 @@
 # GTA-SA Menu Startpage
+A browser start page inspired by the iconic **GTA San Andreas** menu.
 
-A browser start page that looks like the iconic GTA San Andreas menu
+![Main Menu Preview](./assets/MainMenu.png)
 
-![preview](./assets/MainMenu.png)
-![preview](./assets/Settings.png)
+## Settings Preview
 
-> [!Note]
-> The live site is hosted [here](https://wjkba.github.io/gta-sa-menu-startpage/)
+![Settings Preview](./assets/Settings.png)
 
-To configure it as your new tab page, use these extensions:
+> **Live Demo:** [Visit the site here](https://amroelhajj.github.io/gta-sa-startpage/).
 
-- Firefox: [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search)
-- Chromium browsers: [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+## Setup Instructions
 
-You can also build the page yourself and run it locally. Feel free to customize the design and functionality to your liking.
+To configure it as your new tab page, use the following extensions:
+
+- **Firefox:** [Custom New Tab Page](https://addons.mozilla.org/en-US/firefox/addon/custom-new-tab-page/?src=search)
+- **Chromium browsers:** [Custom New Tab URL](https://chrome.google.com/webstore/detail/custom-new-tab-url/mmjbdbjnoablegbkcklggeknkfcjkjia)
+
+You can also build the page locally and customize the design and functionality as you wish.
 
 ## Features
-- Classic menu sound effects
-- Multiple background options to choose from
-- Move up and down in menu using jk, ws, or the arrow keys
-- Integrated search engines
+
+- 🎵 Classic menu sound effects
+- 🎨 Multiple background options to choose from
+- ⬆️ Move up and down in the menu using `jk`, `ws`, or the arrow keys
+- 🔍 Integrated search engines
+- 🔄 **New:** Reorder websites and search engines
+- ✍️ **New:** Ability to add custom search engines
+- ⏰ **New:** Added clock to the main menu
 
 ## Acknowledgments
-All credit for the original design goes to Rockstar.
+
+All credit for the original design goes to **Rockstar**.  
+Shoutout [wjkba](https://github.com/wjkba) for the original project and inspiration for this fork.

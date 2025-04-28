@@ -1,4 +1,5 @@
 # GTA-SA Menu Startpage
+
 A browser start page inspired by the iconic **GTA San Andreas** menu.
 
 ![Main Menu Preview](./assets/MainMenu.png)
@@ -7,7 +8,7 @@ A browser start page inspired by the iconic **GTA San Andreas** menu.
 
 ![Settings Preview](./assets/Settings.png)
 
-> **Live Demo:** [Visit the site here](https://amroelhajj.github.io/gta-sa-startpage/).
+> **Live Demo:** [Visit the site here](https://beyondDREADFUL.github.io/gta-sa-startpage/).
 
 ## Setup Instructions
 
